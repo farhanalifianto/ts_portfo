@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../sub/ProjectCard";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -11,20 +12,18 @@ const Projects = () => {
         My Projects
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
+        <Link href="https://keyybyte.vercel.app/">
+          {" "}
+          <ProjectCard
+            src="/keyybyte.png"
+            title="KeyyByte beta"
+            description="Created a cloud-based storage using Next.js and Appwrite."
+          />
+        </Link>
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/nikecone.png"
+          title="Clone Nike Landing Page"
+          description="Clone Nike Landing Page including users and stock management, and integration with Midtrans Payment Gateway."
         />
       </div>
     </div>
